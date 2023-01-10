@@ -5,7 +5,9 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon app.js",
+    "start:forever":"forever start ./forever/development.json"
   },
   "author": "SAHASRANGSHU GUHA",
   "license": "ISC",
@@ -17,7 +19,10 @@
     "https": "^1.0.0",
     "mongoose": "^6.8.3",
     "mongoose-patcher": "^0.3.0",
-    "nodemon": "^2.0.20",
     "swagger-ui-express": "^4.6.0"
+  },
+  "devDependencies": {
+    "forever": "^4.0.3",
+    "nodemon": "^2.0.20"
   }
 }
